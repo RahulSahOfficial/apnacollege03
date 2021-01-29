@@ -1,0 +1,110 @@
+/* Css reset */
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Styling body */
+body
+{
+	width: 100%;
+	min-height: 100vh;
+	background-image: linear-gradient(45deg, #0B63F6, #003CC5);
+	padding: 4rem 8rem;
+}
+.maindiv
+{
+	background: #ececec;
+    padding: 2rem;
+	border-radius: 1rem;
+	width: 70%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 30px #1717178c;
+}
+.maindiv h1{
+	color: #e91e63;
+	margin: 1rem 0 1.5rem 1rem;
+	text-align: center;
+    font-size: 1.7rem;
+}
+
+/* Styling each card */
+.eachdiv
+{
+	padding: 1rem;
+    margin: 1.5rem 1rem;
+	border: 1px solid grey;
+	background: #f3f3f3;
+    border-radius: 1rem;
+}
+.eachdiv img{
+	height: 8rem;
+    border-radius: 100%;
+    float: left;
+	margin-right: 1rem;
+	transition: 0.4s;
+	cursor: pointer;
+}
+/* Card Image hover state */
+.eachdiv img:hover{
+	transform: scale(1.1);
+}
+
+/* Styling Card texts */
+.text .heading
+{
+	font-size: 1.5rem;
+    color: #3f51b5;
+    margin-bottom: 0.5rem;
+}
+.text .desc
+{
+	color: #88a1ad;
+    line-height: 1.3;
+    margin-bottom: 0.4rem;
+}
+.text .handle
+{
+	font-size: 0.9rem;
+    color: #2196f3;
+	font-weight: 600;
+	text-decoration: none;
+    cursor: pointer;
+}
+
+/* Design when image is in right side and text in left side */
+.eachdiv.right img
+{
+	float: right;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+.eachdiv.right .text{
+	clear: left;
+}
+
+
+/* Styling Media Query */
+@media only screen and (max-width:1200px)
+{
+	body{
+		padding: 4rem 2rem;
+	}
+	.maindiv
+	{
+		width: 90%;
+	}
+}
+@media only screen and (max-width:700px)
+{
+	body{
+		padding: 4rem 1rem;
+	}
+	.maindiv
+	{
+		width: 100%;
+		padding: 1rem;
+	}
+}
